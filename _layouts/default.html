@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Bennett Diamond">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/themes/light.css" id="theme"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/fonts/sans.css" id="font"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/mediaQueries.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
+  </head>
+  </head>
+  <body>
+    {{ content }}
+    <script src="{{ site.baseurl }}/js/anchor.min.js"></script>
+    <script>
+      anchors.options = {
+        placement: 'left',
+        class: 'non-a',
+      };
+      anchors.add('h1, h2, h3, h4, h5, h6');
+    </script>
+  </body>
+</html>

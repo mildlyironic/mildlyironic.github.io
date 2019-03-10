@@ -1,0 +1,25 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+$body: #2B2E39;
+$color1: #383c4a;
+$color2: #404551;
+$bodybg: #FCFCFC;
+
+@import "style";
+
+body, .body-content, .caption, .date, .older-newer{color:white;}
+
+.body-wrapper, .nav-left, .archive, .dropdown, .themeList, .search, .nav-status, .toc-entry:hover, .list:hover, .themeList li:hover{
+  -webkit-animation:bgcolorchange 0.2s infinite alternate;
+  animation:bgcolorchange 0.2s infinite alternate;
+}
+
+.body-content, h1, h2, h3, h4, h5, h6, h1::before, h2::before, h3::before, h4::before{
+  -webkit-animation:colorchange 0.2s infinite alternate;
+  animation:colorchange 0.2s infinite alternate;
+}
+
+@-webkit-keyframes bgcolorchange{0%{background-color:pink}10%{background-color:#ffff}20%{background-color:indigo}30%{background-color:yellow}40%{background-color:brown}50%{background-color:green}60%{background-color:#32cd32}70%{background-color:orange}80%{background-color:black}90%{background-color:red}100%{background-color:blue}}@-webkit-keyframes colorchange{0%{color:blue}10%{color:red}20%{color:black}30%{color:orange}40%{color:#32cd32}50%{color:green}60%{color:brown}70%{color:yellow}80%{color:indigo}90%{color:#ffff}100%{color:pink}}
+
+@keyframes bgcolorchange{0%{background-color:pink}10%{background-color:#ffff}20%{background-color:indigo}30%{background-color:yellow}40%{background-color:brown}50%{background-color:green}60%{background-color:#32cd32}70%{background-color:orange}80%{background-color:black}90%{background-color:red}100%{background-color:blue}}@keyframes colorchange{0%{color:blue}10%{color:red}20%{color:black}30%{color:orange}40%{color:#32cd32}50%{color:green}60%{color:brown}70%{color:yellow}80%{color:indigo}90%{color:#ffff}100%{color:pink}}

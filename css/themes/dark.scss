@@ -1,0 +1,12 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+$body: #1A1C22;
+$color1: #22242c;
+$color2: #262931;
+$bodybg: #181818;
+
+@import "style";
+
+.body{filter: invert(100%);}
+img{filter:invert(100%);}

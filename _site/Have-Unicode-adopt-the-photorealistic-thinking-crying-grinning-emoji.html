@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Bennett Diamond">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Have unicode adopt the photorealistic Thinking Crying Grinning emoji</title>
+
+    <link rel="stylesheet" href="/css/themes/light.css" id="theme"/>
+    <link rel="stylesheet" href="/css/fonts/sans.css" id="font"/>
+    <link rel="stylesheet" href="/css/mediaQueries.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
+  </head>
+  </head>
+  <body>
+    <!--<div id="wrapper"><div id="alt-wrapper"></div><div class="top-bar"></div></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2"></script>
+<script>
+function invertColor(hex,bw) {
+    if (hex.indexOf('#') === 0) {
+        hex = hex.slice(1);
+    }
+    // convert 3-digit hex to 6-digits.
+    if (hex.length === 3) {
+        hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+    }
+    if (hex.length !== 6) {
+        throw new Error('Invalid HEX color.');
+    }
+    var r = parseInt(hex.slice(0, 2), 16),
+        g = parseInt(hex.slice(2, 4), 16),
+        b = parseInt(hex.slice(4, 6), 16);
+    if (bw) {
+    	return (r * 0.299 + g * 0.587 + b * 0.114) > 186
+        	? '#000000'
+            : '#FFFFFF';
+    }
+    // invert color components
+    r = (255 - r).toString(16);
+    g = (255 - g).toString(16);
+	b = (255 - b).toString(16);
+    // pad each with zeros and return
+    return "#" + padZero(r) + padZero(g) + padZero(b);
+}
+
+function padZero(str, len) {
+    len = len || 2;
+    var zeros = new Array(len).join('0');
+    return (zeros + str).slice(-len);
+}
+
+function getRandomColor() {
+    var color = Math.floor(Math.random()*16777215).toString(16);
+    return "#" + padZero(color, 6);
+}
+
+function generate(bw) {
+	$('#colors').empty();
+    var i, box, box2, color, bgColor, boxContent0, boxContent1;
+    for (i = 0; i <= 0; i++) {
+        bgColor = getRandomColor();
+        color = invertColor(bgColor, bw);
+        box = $('<div class="link-wrapper"></div>')
+            .css({
+                
+            });
+        box2 = $('<div class="top-bar-alt"></div>')
+            .css({
+                'background-color': bgColor
+            });
+        boxContent0 = $('<a href="/" class="top-bar-a">Index</a><a href="/about" class="top-bar-a">About</a><a href="#" class="top-bar-a">Resources</a>')
+        		.css({
+                'color': color,
+                'background-color': bgColor,
+            });
+        boxContent1 = $('<a href="/" class="top-bar-a-alt">Index</a><a href="/about" class="top-bar-a-alt">About</a><a href="#" class="top-bar-a-alt">Resources</a>')
+        		.css({
+                'color': bgColor,
+                'background-color': color
+            });
+        $('#alt-wrapper').append(box2);
+        $('.top-bar').append(box);
+        $('#colors').append(box);
+        $('.link-wrapper').append(boxContent0);
+        $('.top-bar-alt').append(boxContent1);
+    }
+}
+
+$(window).load(function() { generate(true); })
+</script>
+-->
+<!--I was really thinking of including the top bar, but I think I want to save that for another project. This blog is going to be linked to my portfolio, eventually, but now
+it'll be self sufficient and very miniscule. No about me page, and resources will eventually go on my portfolio-->
+
+<!--TODO: Add a scrollspy on the nav bar, and smooth scrolling with that-->
+<!--TODO: Add search bar functionality-->
+<div class="nav-status">/Have-Unicode-adopt-the-photorealistic-thinking-crying-grinning-emoji.html</div>
+<div class="content-wrapper">
+  <div class="panel-wrapper-group">
+  <input type="text" placeholder="search" class="search">
+  <div>
+    <button class="dropdown themeDown" onclick="themeDown()" aria-haspopup="true">Theme:</button>
+    <button class="dropdown fontDown" onclick="fontDown()" aria-haspopup="true">Font:</button>
+  </div>
+  <div class="themeWrapper">
+    <div class="themeList" id="themeList" aria-labelledby="theme list">
+      <button onclick="swapStyleSheet('../css/themes/light.css')">Light</button>
+      <button onclick="swapStyleSheet('../css/themes/dark.css')">Dark</button>
+      <button onclick="swapStyleSheet('../css/themes/sepia.css')">Sepia</button>
+      <button onclick="swapStyleSheet('../css/themes/solarized.css')">Solarized</button>
+      <button onclick="swapStyleSheet('../css/themes/4chan.css')">Greentext</button>
+      <button onclick="swapStyleSheet('../css/themes/terminal.css')">Terminal</button>
+      <button onclick="swapStyleSheet('../css/themes/Epilepsy-Warning.css')">Epilepsy Warning</button>
+    </div>
+    <div class="themeList" id="fontList" aria-labelledby="font list">
+      <button style="font-family:'Roboto', sans-serif" onclick="swapFontStyleSheet('../css/fonts/sans.css')">Sans</button>
+      <button style="font-family:serif" onclick="swapFontStyleSheet('../css/fonts/serif.css')">Serif</button>
+      <button style="font-family:Comic Sans, sans-serif" onclick="swapFontStyleSheet('../css/fonts/comic.css')">Comic Sans</button>
+      <button style="font-family:dyslexic, serif" onclick="swapFontStyleSheet('../css/fonts/dyslexic.css')">Dyslexic</button>
+      <button style="font-family:Monospace" onclick="swapFontStyleSheet('../css/fonts/monospace.css')">Monospace</button>
+    </div>
+  </div>
+  <div class="panel-wrapper">
+    <div class="panel archive">
+      <div class="section-nav">
+        <!--If there's a tag, it will filter out the other stuff-->
+        <a class="list" href="/Thanks-you-too.html">Thanks you too</a><a class="list" href="/Why-Thanksgiving-doesn't-hold-its-weight-as-a-holiday.html">Why thanksgiving doesn't hold its weight as a holiday</a><a class="list" href="/test.html">Test</a><a class="list" href="/My-3-year-old-son-is-dying-of-Leukemia.html">My 3 Year Old son is dying of leukemia</a><a class="list" href="/Have-Unicode-adopt-the-photorealistic-thinking-crying-grinning-emoji.html">Have unicode adopt the photorealistic Thinking Crying Grinning emoji</a>
+      </div>
+    </div>
+    <div class="panel nav-left">
+      
+        <a class="list" style="margin-bottom:20px;" href="#have-unicode-adopt-the-photorealistic-thinking-crying-grinning-emoji-title">Have unicode adopt the photorealistic Thinking Crying Grinning emoji</a>
+      
+      <!--<p><a href="https://www.change.org/p/unicode-have-unicode-adopt-the-photorealistic-thinking-crying-grinning-emoji" title="Change.org Petition Link"><img src="../img/Petition.png" alt="Change.org Petition" /></a></p>
+
+<p class="caption">You can support this (much needed) mission on <a href="https://www.change.org/p/unicode-have-unicode-adopt-the-photorealistic-thinking-crying-grinning-emoji" title="Change.org Petition Link">my change.org petition</a></p>
+
+<p>In the new age of digital media, the traditional form of communication, writing, is seeing its death. Its subjects are unruly and its laws obsolete; the King of Promulgation is sick while its successor, Emoji, lies in wait.</p>
+
+<p>The road to our pictograph future is being paved. Already, Oxford dictionary has acknowledged Emoji’s superiority; its 2015 “word” of the year was the laughing crying face. Two things result from this fact: 1) Emoticon is already acknowledged by all language powers to be itself a power and 2) It is high time that the truth should openly, in the face of the whole world, meet other powers with its own manifesto.</p>
+
+<p>This recent ousting is a result of the modern globalization of communication. While the written word plays an all-too-integral role to be fully replaced, the new “hieroglyph language” offers numerous benefits in our new society, chiefly being its efficiency, nature, and ability to quickly communicate human emotion without need of words.</p>
+
+<p>With this fundamental truth, why hasn’t this power already taken its God-mandated throne? Why hasn’t the spectre of written word been exorcised? The hieroglyph language has a fatal flaw: it lacks the photorealistic-thinking-crying-grinning emoji.</p>
+
+<p>While the subjects of language’s kingdom support Emoji, many recognize viscerally its hamartia, even without knowing it. For centuries, we have (futilely) attempted to fully explain the inward feelings we face. It is the nature of our consciousness to question, but still, we have ultimately failed in answering the most basic internal question: what is that one emotion?</p>
+
+<p>So why then, with time spanning the start of our existence, could we not answer this query?</p>
+
+<p>The reason being is that we lack the language to explain the phenomenon that is consciousness. Even predating spoken language and the written word, thought alone is not enough to satisfy our needs. Only with Emoji can we begin to answer the Question of That Emotion, but Emoji in its current state cannot fully accomplish this task.</p>
+
+<p>The photorealistic-thinking-crying-grinning emoji is the only emoji that can express an emotion that words cannot convey. It is what philosophers of centuries past have sought after. It is what has motivated the greatest poets, artists, and writers to create masterpieces. It is when you look down and finally realize the scale and complexity of our Earth, then that same emotion times a myriad-fold when you look up at the stars.</p>
+
+<p>And yet when we grasp for the words to explain this sensation, we fall short, not because we cannot attempt clarification, but because the written language doesn’t have the capacity for expounding this.</p>
+
+<p>So please, Unicode, for the good of humanity, approve the photorealistic-thinking-crying-grinning emoji.</p>
+
+<p>Sincerely, everyone who has felt this emotion.</p>
+-->
+      
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  //Dropdown
+  function themeDown() {
+    document.getElementById("themeList").classList.toggle("show");
+  }
+  function fontDown() {
+    document.getElementById("fontList").classList.toggle("show");
+  }
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropdown')) {
+    var themeListID = document.getElementById("themeList");
+      if (themeListID.classList.contains('show')) {
+        themeListID.classList.remove('show');
+      }
+    }
+  }
+
+  //Fonts and Themes
+  var stylesheet = localStorage.getItem("stylesheet");
+  var fontStylesheet = localStorage.getItem("fontStylesheet");
+
+  function swapStyleSheet(sheet){
+      document.getElementById('theme').setAttribute('href', sheet);
+      localStorage.setItem('stylesheet', sheet);
+  }
+  if(stylesheet) {
+      swapStyleSheet(stylesheet)
+  }
+  function swapFontStyleSheet(fontSheet){
+      document.getElementById('font').setAttribute('href', fontSheet);
+      localStorage.setItem('fontStylesheet', fontSheet);
+  }
+  if(fontStylesheet) {
+      swapFontStyleSheet(fontStylesheet)
+  }
+  /*
+  function solarize(){
+    var colors = ['#b58900', '#cb4b16', '#dc322f', '#d33682', '#6c71c4', '#268bd2', '#2aa198', '#859900'];
+    for(var i = 0; i < 3; i++)
+        colors.push(Math.floor(Math.random() * 255));
+    var v = 1
+    document.getElementsByClassName('body-contentbody-content')[0].style.color = colors[Math.floor(Math.random() * colors.length)];
+  }
+  function solarize() {
+    var colors = ['#b58900', '#cb4b16', '#dc322f', '#d33682', '#6c71c4', '#268bd2', '#2aa198', '#859900'],
+
+        ptags = Array.from(document.querySelectorAll('p'));
+    ptags.forEach(function(p, index) {
+      p.style.color = colors[index % colors.length];
+    });
+  }
+  */
+</script>
+  <div class="body-wrapper">
+    <div class="body">
+      <div style="width: 100%;">
+        <a class="older-newer" href="">← </a>
+        <a class="older-newer" href="/My-3-year-old-son-is-dying-of-Leukemia.html">My 3 Year Old son is dying ... →</a>
+      </div>
+      <h1 id="have-unicode-adopt-the-photorealistic-thinking-crying-grinning-emoji-title">Have unicode adopt the photorealistic Thinking Crying Grinning emoji</h1>
+      <a href="/">← See all posts</a>
+      
+        <a class="tag older-newer" href="../tags/writing.html">writing</a>
+      
+      <div class="body-content">
+        <p class="date"><i class="far fa-clock"></i> Written on 2018-10-22 by Bennett Diamond</p>
+        <p class="date">474 words</p>
+        <p><a href="https://www.change.org/p/unicode-have-unicode-adopt-the-photorealistic-thinking-crying-grinning-emoji" title="Change.org Petition Link"><img src="../img/Petition.png" alt="Change.org Petition" /></a></p>
+
+<p class="caption">You can support this (much needed) mission on <a href="https://www.change.org/p/unicode-have-unicode-adopt-the-photorealistic-thinking-crying-grinning-emoji" title="Change.org Petition Link">my change.org petition</a></p>
+
+<p>In the new age of digital media, the traditional form of communication, writing, is seeing its death. Its subjects are unruly and its laws obsolete; the King of Promulgation is sick while its successor, Emoji, lies in wait.</p>
+
+<p>The road to our pictograph future is being paved. Already, Oxford dictionary has acknowledged Emoji’s superiority; its 2015 “word” of the year was the laughing crying face. Two things result from this fact: 1) Emoticon is already acknowledged by all language powers to be itself a power and 2) It is high time that the truth should openly, in the face of the whole world, meet other powers with its own manifesto.</p>
+
+<p>This recent ousting is a result of the modern globalization of communication. While the written word plays an all-too-integral role to be fully replaced, the new “hieroglyph language” offers numerous benefits in our new society, chiefly being its efficiency, nature, and ability to quickly communicate human emotion without need of words.</p>
+
+<p>With this fundamental truth, why hasn’t this power already taken its God-mandated throne? Why hasn’t the spectre of written word been exorcised? The hieroglyph language has a fatal flaw: it lacks the photorealistic-thinking-crying-grinning emoji.</p>
+
+<p>While the subjects of language’s kingdom support Emoji, many recognize viscerally its hamartia, even without knowing it. For centuries, we have (futilely) attempted to fully explain the inward feelings we face. It is the nature of our consciousness to question, but still, we have ultimately failed in answering the most basic internal question: what is that one emotion?</p>
+
+<p>So why then, with time spanning the start of our existence, could we not answer this query?</p>
+
+<p>The reason being is that we lack the language to explain the phenomenon that is consciousness. Even predating spoken language and the written word, thought alone is not enough to satisfy our needs. Only with Emoji can we begin to answer the Question of That Emotion, but Emoji in its current state cannot fully accomplish this task.</p>
+
+<p>The photorealistic-thinking-crying-grinning emoji is the only emoji that can express an emotion that words cannot convey. It is what philosophers of centuries past have sought after. It is what has motivated the greatest poets, artists, and writers to create masterpieces. It is when you look down and finally realize the scale and complexity of our Earth, then that same emotion times a myriad-fold when you look up at the stars.</p>
+
+<p>And yet when we grasp for the words to explain this sensation, we fall short, not because we cannot attempt clarification, but because the written language doesn’t have the capacity for expounding this.</p>
+
+<p>So please, Unicode, for the good of humanity, approve the photorealistic-thinking-crying-grinning emoji.</p>
+
+<p>Sincerely, everyone who has felt this emotion.</p>
+
+        <div style="width: 100%;">
+          <a class="older-newer" href="">← </a>
+          <a class="older-newer" href="/My-3-year-old-son-is-dying-of-Leukemia.html">My 3 Year Old son is dying ... →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-status">&copy; <a href="mailto:pudgypoppins@gmail.com">Bennett Diamond</a> 2018. All rights reserved. Subscribe via <a href="/feed.xml">RSS</a></div>
+    <script src="/js/anchor.min.js"></script>
+    <script>
+      anchors.options = {
+        placement: 'left',
+        class: 'non-a',
+      };
+      anchors.add('h1, h2, h3, h4, h5, h6');
+    </script>
+  </body>
+</html>

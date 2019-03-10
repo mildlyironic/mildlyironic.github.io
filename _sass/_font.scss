@@ -1,0 +1,31 @@
+@font-face{
+    font-family:Futura;
+    src:url(../Futura%20Book%20Regular.otf);
+}
+@font-face{
+    font-family:Comic Sans;
+    src:url(../COMIC.TTF);
+}
+@font-face{
+    font-family:dyslexic;
+    src:url(../dyslexic.otf);
+}
+/*@font-face{
+    font-family:FontAwesome;
+    src:url(FontAwesome.otf);
+}*/
+@font-face{
+    font-family:Archia;
+    src:url(../Archia-Regular.otf);
+}
+
+$allFont: -apple-system,system-ui, BlinkMacSystemFont, San Francisco, Roboto, "Segoe UI", Helvetica, Helvetica Neue, sans-serif !default;
+$bodyFont: 'Roboto', sans-serif !default;
+$olderNewer: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif !default;
+$titleFont: 'Futura', sans-serif !default;
+
+*{font-family:$allFont;}
+.panel{font-family:$bodyFont;}
+.older-newer, a{font-family: $olderNewer;}
+.body-content{font-family:$bodyFont;}
+h1{font-family:$titleFont;}

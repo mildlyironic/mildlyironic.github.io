@@ -1,0 +1,31 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+$body: #001d24;
+$color1: #002b36;
+$color2: #073642;
+$bodybg: #002b36;
+$selected: #2aa198;
+
+@import "style";
+
+.nav-status{background-color:$color2;}
+.body-content{color:#fdf6e3;}
+h1, h2, h3, h4, h5 {color: #eee8d5;}
+.date, .caption{color:#839496}
+.older-newer{color:#cd8c23;}
+.older-newer:hover{background:#111111; color:#b5b5b5}
+
+$colors: #b58900, #cb4b16, #dc322f, #d33682, #6c71c4, #268bd2, #2aa198, #859900;
+
+@for $i from 1 through 500 {
+  $randomNumber: random(8);
+  $list: #b58900, #cb4b16, #dc322f, #d33682, #6c71c4, #268bd2, #2aa198, #859900;
+  $nth: nth($list, $randomNumber);
+  .body-wrapper:nth-child(#{$i}) .body .non-a h1 .anchorjs-link {color:#{$nth} !important;}
+}
+h2 .anchorjs-link{color:#cb4b16}
+h3 .anchorjs-link{color:#268bd2}
+h4 .anchorjs-link{color:#d33682}
+h5 .anchorjs-link{color:#6c71c4}
+h6 .anchorjs-link{color:#2aa198}

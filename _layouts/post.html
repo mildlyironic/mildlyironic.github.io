@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<!--{% include topbar.html %}-->
+<!--I was really thinking of including the top bar, but I think I want to save that for another project. This blog is going to be linked to my portfolio, eventually, but now
+it'll be self sufficient and very miniscule. No about me page, and resources will eventually go on my portfolio-->
+
+<!--TODO: Add a scrollspy on the nav bar, and smooth scrolling with that-->
+<!--TODO: Add search bar functionality-->
+<div class="nav-status">{{ page.url }}</div>
+<div class="content-wrapper">
+  {% include sidebar.html %}
+  <div class="body-wrapper">
+    <div class="body">
+      <div style="width: 100%;">
+        <a class="older-newer" href="{{page.previous.url}}">← {{page.previous.title | truncate: 30}}</a>
+        <a class="older-newer" href="{{page.next.url}}">{{page.next.title | truncate: 30}} →</a>
+      </div>
+      <h1 id="{{ page.title | slugify }}-title">{{ page.title }}</h1>
+      <a href="/">← See all posts</a>
+      {% for tag in page.tags %}
+        <a class="tag older-newer" href="../tags/{{ tag }}.html">{{ tag }}</a>
+      {% endfor %}
+      <div class="body-content">
+        <p class="date"><i class="far fa-clock"></i> Written on {{ page.date | date: "%Y-%m-%d" }} by Bennett Diamond</p>
+        <p class="date">{{ page.content | number_of_words }} words</p>
+        {{ content }}
+        <div style="width: 100%;">
+          <a class="older-newer" href="{{page.previous.url}}">← {{page.previous.title | truncate: 30}}</a>
+          <a class="older-newer" href="{{page.next.url}}">{{page.next.title | truncate: 30}} →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-status">&copy; <a href="mailto:pudgypoppins@gmail.com">Bennett Diamond</a> 2018. All rights reserved. Subscribe via <a href="{{ site.baseurl }}/feed.xml">RSS</a></div>

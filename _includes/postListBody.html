@@ -1,0 +1,16 @@
+<div class="body-wrapper">
+	<div class="body">
+	  <a href="{{ post.url }}" class="non-a"><h1 id="{{ post.title | slugify }}-title">{{ post.title }}</h1></a>
+	  {% unless page.url == "/" %}
+	  	<a href="/" style="margin-right:5px;">← See all posts</a>
+	  {% endunless %}
+	  {% for tag in post.tags %}
+        <a class="tag older-newer" href="/tags/{{ tag }}.html">{{ tag }}</a>
+      {% endfor %}
+	  <div class="body-content">
+	    <p class="date"><i class="far fa-clock"></i> Written on {{ post.date | date: "%Y-%m-%d" }} by Bennett Diamond</p>
+	    <p class="date">{{ post.content | number_of_words }} words</p>
+	    {{ post.content }}
+	  </div>
+	</div>
+</div>

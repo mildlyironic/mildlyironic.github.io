@@ -1,0 +1,20 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+$body: #979cc0;
+$color1: #afb3d1;
+$color2: #c9cde8;
+$bodybg: #d6daee;
+$selected: forestgreen;
+
+@import "style";
+
+.body-content{color:#789922;}
+p:not(.date)::before{content:">";}
+
+h1::before, h2::before, h3::before, h4::before{content:">";}
+h1, h2, h3, h4, h5{color:#336699;}
+
+.older-newer, a, a:hover{color:#d00;}
+
+.list, .toc-entry a, .dropdown, .themeWrapper{color:#25254E; font-weight:bold;}
