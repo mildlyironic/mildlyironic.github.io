@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </head>
   </head>
   <body>
@@ -97,7 +101,6 @@ $(window).load(function() { generate(true); })
 <!--I was really thinking of including the top bar, but I think I want to save that for another project. This blog is going to be linked to my portfolio, eventually, but now
 it'll be self sufficient and very miniscule. No about me page, and resources will eventually go on my portfolio-->
 
-<!--TODO: Add a scrollspy on the nav bar, and smooth scrolling with that-->
 <!--TODO: Add search bar functionality-->
 <div class="nav-status">/test.html</div>
 <div class="content-wrapper">
@@ -129,7 +132,29 @@ it'll be self sufficient and very miniscule. No about me page, and resources wil
     <div class="panel archive">
       <div class="section-nav">
         <!--If there's a tag, it will filter out the other stuff-->
-        <a class="list" href="/Thanks-you-too.html">Thanks you too</a><a class="list" href="/Why-Thanksgiving-doesn't-hold-its-weight-as-a-holiday.html">Why thanksgiving doesn't hold its weight as a holiday</a><a class="list" href="/test.html">Test</a><a class="list" href="/My-3-year-old-son-is-dying-of-Leukemia.html">My 3 Year Old son is dying of leukemia</a><a class="list" href="/Have-Unicode-adopt-the-photorealistic-thinking-crying-grinning-emoji.html">Have unicode adopt the photorealistic Thinking Crying Grinning emoji</a>
+        
+           
+              
+                <a href="/Thanks-you-too.html" class="list">Thanks you too</a>
+              
+            
+              
+                <a href="/Why-Thanksgiving-doesn't-hold-its-weight-as-a-holiday.html" class="list">Why thanksgiving doesn't hold its weight as a holiday</a>
+              
+            
+              
+                <a href="/test.html" class="list active">Test</a></li>
+              
+            
+              
+                <a href="/My-3-year-old-son-is-dying-of-Leukemia.html" class="list">My 3 Year Old son is dying of leukemia</a>
+              
+            
+              
+                <a href="/Have-Unicode-adopt-the-photorealistic-thinking-crying-grinning-emoji.html" class="list">Have unicode adopt the photorealistic Thinking Crying Grinning emoji</a>
+              
+            
+        
       </div>
     </div>
     <div class="panel nav-left">
@@ -164,7 +189,7 @@ it'll be self sufficient and very miniscule. No about me page, and resources wil
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nibh, suscipit sed rhoncus quis, blandit quis sapien. Ut congue pharetra rhoncus. Praesent finibus vitae urna quis cursus. Proin mollis elementum sapien, vitae viverra magna tincidunt a. Nullam tincidunt interdum dui ut ultricies. Maecenas pellentesque tellus ac mauris faucibus elementum. Nulla quis risus aliquam, pharetra neque non, dapibus augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras ullamcorper lacinia augue in placerat. Suspendisse lacinia massa id blandit varius. Mauris ultricies ultricies bibendum.</p>
 -->
-      <ul class="section-nav">
+      <ul id="nav-left" class="section-nav">
   <li><a href="#lorem-ipsum" class="list">Lorem Ipsum</a>
     <ul>
       <li><a href="#dolor-asset" class="list">Dolor Asset</a></li>
@@ -318,6 +343,11 @@ it'll be self sufficient and very miniscule. No about me page, and resources wil
         class: 'non-a',
       };
       anchors.add('h1, h2, h3, h4, h5, h6');
+    </script>
+
+    <script src="/js/scrollspy.js"></script>
+    <script>
+      $("#nav-left").scrollspy({ animate: true, duration: 500 });
     </script>
   </body>
 </html>

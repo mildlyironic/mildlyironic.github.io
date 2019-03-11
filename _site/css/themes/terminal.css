@@ -82,9 +82,11 @@ ul.section-nav, .section-nav ul { padding-left: 0; margin-top: 0; }
 
 .list:hover, .list:focus { color: white; background-color: #41FF00; /*#D0D0D0 — White Theme*/ }
 
+.active { color: white; background-color: #040404; }
+
 .list::before { content: "# "; color: #41FF00; margin-right: 5px; }
 
-.list:hover::before, .list:focus::before { color: white; }
+.list:hover::before, .list:focus::before, .active .list::before { color: white; }
 
 /*.list:first-of-type{
 	margin-top:20px;

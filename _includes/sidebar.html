@@ -39,9 +39,13 @@
             <a class="list" href="{{ post.url }}">{{ post.title }}</a>
           {%- endfor -%}
         {% else %}
-          {%- for post in site.posts -%}
-            <a class="list" href="{{ post.url }}">{{ post.title }}</a>
-          {%- endfor -%}
+           {% for post in site.posts %}
+              {% if page.url == post.url %}
+                <a href="{{post.url}}" class="list active">{{post.title}}</a></li>
+              {% else %}
+                <a href="{{post.url}}" class="list">{{post.title}}</a>
+              {% endif %}
+            {% endfor %}
         {% endif %}
       </div>
     </div>
@@ -50,7 +54,7 @@
         <a class="list" style="margin-bottom:20px;" href="#{{ page.title | slugify }}-title">{{ page.title }}</a>
       {% endif %}
       <!--{{ content | toc_only }}-->
-      {% include toc.html html=content anchor_class="list" class="section-nav" %}
+      {% include toc.html html=content anchor_class="list" class="section-nav" id="nav-left" %}
     </div>
   </div>
 </div>

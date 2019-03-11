@@ -3,23 +3,28 @@
 		justify-content: center;
 	}
 	.body{margin: 0 auto;}
+	.search{box-sizing: border-box;}
 	.panel-wrapper{min-height: 0;}
 	.panel{
 		min-height: 20px;
-		height: 100%;
+		max-height: 30vh;
+		overflow: scroll;
 		width:100%;
-		max-width: 100%;
 	}
 	.content-wrapper{display:flex; flex-flow: column nowrap;}
 	.panel{padding:5px 0; box-sizing: border-box;}
 	.section-nav{position: relative; top:0; margin-top:0;}
-	.toc-entry{width: auto}
 	.list:first-of-type{margin-top:0;}
 }
 
 @media screen and (max-width: 560px) {
 	.body{padding:10px 50px 10px 75px;}	
 	.link::before{margin-left:-55px;}
-	.older-newer{display:block; text-align: center; margin-left:-30px;}
-	.older-newer:last-of-type{float:none;}
+	.older-newer:not(.tag){display:block; text-align: center; margin-left:-30px;}
+	.older-newer:not(.tag):last-of-type{float:none;}
+}
+
+@media screen and (max-width: 500px) {
+	.panel-wrapper{flex-flow:column;}
+	*{box-sizing: border-box;}
 }
