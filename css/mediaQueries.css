@@ -9,6 +9,7 @@
 		min-height: 20px;
 		max-height: 30vh;
 		overflow: scroll;
+		width:50%;
 		max-width:100%;
 	}
 	.content-wrapper{display:flex; flex-flow: column nowrap;}
@@ -27,4 +28,6 @@
 @media screen and (max-width: 500px) {
 	.panel-wrapper{flex-flow:column;}
 	*{box-sizing: border-box;}
+	.dropdown{float:none; width:100%;}
+	.panel{width:100%}
 }
