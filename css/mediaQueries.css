@@ -9,7 +9,7 @@
 		min-height: 20px;
 		max-height: 30vh;
 		overflow: scroll;
-		width:100%;
+		max-width:100%;
 	}
 	.content-wrapper{display:flex; flex-flow: column nowrap;}
 	.panel{padding:5px 0; box-sizing: border-box;}

@@ -60,7 +60,7 @@ html, body, .search { background-color: #979cc0; color: white; }
 
 .show { display: block; }
 
-.search { border: none; padding: 7px; line-height: 22px; width: 100%; }
+.search { border: none; padding: 7px; line-height: 22px; width: 100%; border-radius: 0px; }
 
 .panel { min-width: 250px; max-width: 250px; text-overflow: ellipsis; white-space: nowrap; white-space: normal; }
 
