@@ -4,6 +4,8 @@ tags: writing
 ---
 For my creative writing class, I had to write the prompt: "Describe a restaurant as seen by a person who is waiting for their blind date. Do not mention the date". For this assignment, we were supposed to be as descriptive as possible.
 
+
+
 The smell greeted me first; an aroma of seared chicken, sauteed vegetables, and fry sauce. Was that cannelloni my experienced sniffer detected? Of course, and served with a side of… tomato bisque… caesar salad…lettuce was recently frozen, not fresh… pasta is gluten free, interesting. I rubbed my temples in the strained effort that was detecting restaurant entrees from three blocks down the street. Would anyone find that impressive? I let myself hope in the spirit of tonight’s special occasion.
 
 Rounding the street corner, I could see the building in all its two-and-a-half-star glory. It was nestled comfortably between an ice cream parlor and a crafts store. Very idyllic, I thought. A lone shopping cart roamed the parking lot, pushed by some unseen force. Its rusted wheels creaked softly with each rotation. Few cars were here on a Wednesday night, and with the cold of winter, the ice cream parlor was empty. My cheeks were already starting to turn red, the winter air freezing my nostrils. I was careful not to slip on the thin coating of ice along the lot, evidence from last week’s rain.
