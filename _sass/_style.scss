@@ -12,10 +12,11 @@ html, body, .search{
 	color:white;
 }
 .nav-status{color:white; box-sizing:border-box;}
-.archive, .themeDown, #themeList, .nav-status{background-color: $color1;}
-.nav-left, .fontDown, #fontList{background-color: $color2;}
+.archive, .nav-status, #themeList{background-color: $color1;}
+.themeDown{background-color: darken($color1, 3%);}
+.fontDown{background-color: darken($color2, 3%);}
+.nav-left, #fontList{background-color: $color2;}
 .body-wrapper{background-color:$bodybg;}
-.panel-wrapper-group{background:linear-gradient(90deg, #{$color1} 50%,#{$color2} 50%)}
 /*End Themes*/
 
 /*Top Bar
@@ -64,7 +65,7 @@ html, body, .search{
 	flex-flow: row nowrap;
 }
 //panel-wrapper height is finicky on some browsers. Testing is in process
-.panel-wrapper{height:100%;}
+.panel-wrapper{flex-grow: 1;}
 
 .themeWrapper{
 	display:flex;

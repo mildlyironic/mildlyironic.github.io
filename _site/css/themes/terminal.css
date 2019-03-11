@@ -8,13 +8,15 @@ html, body, .search { background-color: black; color: white; }
 
 .nav-status { color: white; box-sizing: border-box; }
 
-.archive, .themeDown, #themeList, .nav-status { background-color: #141313; }
+.archive, .nav-status, #themeList { background-color: #141313; }
 
-.nav-left, .fontDown, #fontList { background-color: #1d1d1d; }
+.themeDown { background-color: #0c0c0c; }
+
+.fontDown { background-color: #151515; }
+
+.nav-left, #fontList { background-color: #1d1d1d; }
 
 .body-wrapper { background-color: #282828; }
-
-.panel-wrapper-group { background: linear-gradient(90deg, #141313 50%, #1d1d1d 50%); }
 
 /*End Themes*/
 /*Top Bar
@@ -42,7 +44,7 @@ html, body, .search { background-color: black; color: white; }
 
 .panel-wrapper { display: flex; flex-flow: row nowrap; }
 
-.panel-wrapper { height: 100%; }
+.panel-wrapper { flex-grow: 1; }
 
 .themeWrapper { display: flex; flex-flow: row nowrap; }
 
